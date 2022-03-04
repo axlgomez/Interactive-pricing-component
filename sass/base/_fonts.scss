@@ -1,0 +1,16 @@
+//## Typography
+
+//### Body Copy
+
+$size-primary: 15px; // (Introductory Paragraph)
+
+//### Font
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+$font-primary: 'Manrope', sans-serif;
+
+$weights: (
+    "semi-bold": 600,
+    "extra-bold": 800
+);
+

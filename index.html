@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="/js/script.js" defer></script>
+    <title>Interactive pricing component</title>
+</head>
+<body>
+
+    <main>
+
+        <article class="trial">
+            <h3 class="trial__title">Simple, traffic-based pricing</h3>
+            <p class="trial__text-mobile">
+                Sign-up for our 30-day trial. 
+            </p>
+            <p class="trial__text-mobile">
+                No credit card required.
+            </p>
+            <p class="trial__text-desktop">
+                Sign-up for our 30-day trial. No credit card required.
+            </p>
+        </article>
+
+        <article class="test">
+            <h5 class="test__page"><span id="views">100k</span> Pageviews</h5>
+            
+            <div class="test__slidecontainer">
+                <input type="range" min="0" max="100" value="50" step="25" class="test__slider" id="myRange">
+                <h1 class="test__price" id="price">$16.00</h1>
+                <small class="test__time">/ month</small>
+            </div>
+            
+            <div class="test__discount">
+                <p class="test__txt">Monthly Billing</p>
+                <label class="test__switch">
+                    <input class="test__input" type="checkbox" id="switcher">
+                    <span class="test__slide"></span>
+                </label>
+                <p class="test__txt">Yearly Billing <span class="test__25">-25%</span ><span class="test__25-discount">25% discount</span></p>
+            </div>
+           
+            <div class="test__start">
+                <ul class="test__ul">
+                    <li class="test__li"><img class="test__img" src="/images/icon-check.svg" alt=""><a class="test__item">Unlimited websites</a></li>
+                    <li class="test__li"><img class="test__img" src="/images/icon-check.svg" alt=""><a class="test__item">100% data ownership</a></li>
+                    <li class="test__li"><img class="test__img" src="/images/icon-check.svg" alt=""><a class="test__item">Email reports</a></li>
+                </ul>
+    
+                <button class="test__button">Start my trial</button>
+            </div>
+        </article>
+
+    </main>
+    
+</body>
+</html>

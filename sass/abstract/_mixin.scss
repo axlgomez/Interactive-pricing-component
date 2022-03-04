@@ -1,0 +1,17 @@
+
+@mixin position ($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == movil-S {
+        @media screen and (max-width: 320px) { @content }
+    }
+    @if $breakpoint == portatil {
+        @media screen and (min-width: 1024px) { @content }
+    }
+}
